@@ -1,0 +1,21 @@
+.content .clearfix .image .rounded-circle {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.card-body .content .simple-user-list .rounded-circle {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.Estilo-sura {
+    background-color: #00d084 !important;
+   
+}
+
+.fondo{
+    background-image: url(../img/Jaguar.png);
+    background-position: top center;
+    background-size: cover;
+    padding: 10% 20% 33% 10%;
+}

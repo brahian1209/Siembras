@@ -1,0 +1,820 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Sura - Menu Principal</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/animate/animate.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="vendor/morris/morris.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.js"></script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/Propios.css">
+</head>
+
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="../2.2.0" class="logo">
+                    <img src="img/logo_corantioquia.png" width="75" height="35" alt="Porto Admin" />
+                </a>
+                <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <form action="pages-search-results.html" class="search nav-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+                        <span class="input-group-append">
+								<button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+							</span>
+                    </div>
+                </form>
+
+                <span class="separator"></span>
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <figure class="profile-picture">
+                            <img src="img/Foto_perfil.jpeg" alt="brahian rojas" class="rounded-circle" data-lock-picture="img/!logged-user.jpg" />
+                        </figure>
+                        <div class="profile-info" data-lock-name="brahia rojas" data-lock-email="barojas@sura.comm.co">
+                            <span class="name">Brahian Andrey Rojas</span>
+                            <span class="role">administrador</span>
+                        </div>
+
+                        <i class="fa custom-caret"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled mb-2">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fas fa-user"></i> Mi Perfil</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fas fa-lock"></i> Cambiar contraseña</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="Inicio_de_sesion.html"><i class="fas fa-power-off"></i> Cerrar Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+                        Corantioquia
+                    </div>
+                    <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+
+                            <ul class="nav nav-main">
+                                <!-- <li>
+                                    <a class="nav-link" href="layouts-default.html">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li> -->
+                                <li class="nav-parent nav-expanded nav-active">
+                                    <a class="nav-link" href="#">
+                                        <i class="fas fa-columns" aria-hidden="true"></i>
+                                        <span>Informate</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li>
+                                            <a class="nav-link" href="Menu.html">
+				                                    Inicio
+				                                </a>
+                                        </li>
+                                        <li class="nav-active">
+                                            <a class="nav-link" href="#">
+				                                    Transparencia
+				                                </a>
+                                        </li>
+                                        <li class="nav-parent">
+                                            <a>
+				                                    Servicio al ciudadano
+				                                </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a class="nav-link" href="#">
+				                                            Tramites
+				                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">
+				                                            Protocolo
+				                                        </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-parent">
+                                            <a>
+				                                    Informes
+				                                </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a class="nav-link" href="#">
+                                                        Datos por municipio
+				                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">
+                                                        Datos de Medellin
+				                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">
+                                                        Datos de Caucacia
+				                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">
+                                                        Datos de Santa Fe de Antioquia
+				                                        </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+
+                        <hr class="separator" />
+
+                        <div class="sidebar-widget widget-tasks">
+                            <div class="widget-header">
+                                <h6>Projects</h6>
+                                <div class="widget-toggle">+</div>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-unstyled m-0">
+                                    <li><a href="#">Quejas</a></li>
+                                    <li><a href="#">Estados resueltos</a></li>
+                                    <li><a href="#">Felicitaciones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="separator" />
+
+                        
+                    </div>
+
+                    <script>
+                        // Maintain Scroll Position
+                        if (typeof localStorage !== 'undefined') {
+                            if (localStorage.getItem('sidebar-left-position') !== null) {
+                                var initialPosition = localStorage.getItem('sidebar-left-position'),
+                                    sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+
+                                sidebarLeft.scrollTop = initialPosition;
+                            }
+                        }
+                    </script>
+
+
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>Estado de informes</h2>
+
+                    <div class="Estilo-sura right-wrapper text-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="index.html">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                            </li>
+                            <li><span>Procesos</span></li>
+                            <li><span>Clientes</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                </header>
+
+                <!-- start: page -->
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <section class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-8">
+                                        <div class="chart-data-selector" id="salesSelectorWrapper">
+                                            <h2>
+                                                Ventas:
+                                                <strong>
+														<select class="form-control" id="salesSelector">
+															<option value="Porto Admin" selected>Sucursal Poblado</option>
+															<option value="Porto Drupal" >Sucursal calle 100</option>
+															<option value="Porto Wordpress" >Cali </option>
+														</select>
+													</strong>
+                                            </h2>
+
+                                            <div id="salesSelectorItems" class="chart-data-selector-items mt-3">
+                                                <!-- Flot: Sales Porto Admin -->
+                                                <div class="chart chart-sm" data-sales-rel="Porto Admin" id="flotDashSales1" class="chart-active" style="height: 203px;"></div>
+                                                <script>
+                                                    var flotDashSales1Data = [{
+                                                        data: [
+                                                            ["Ene", 140],
+                                                            ["Feb", 240],
+                                                            ["Mar", 190],
+                                                            ["Abr", 140],
+                                                            ["May", 180],
+                                                            ["Jun", 320],
+                                                            ["Jul", 270],
+                                                            ["Aug", 180]
+                                                        ],
+                                                        color: "#0088cc"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+
+                                                <!-- Flot: Sales Porto Drupal -->
+                                                <div class="chart chart-sm" data-sales-rel="Porto Drupal" id="flotDashSales2" class="chart-hidden"></div>
+                                                <script>
+                                                    var flotDashSales2Data = [{
+                                                        data: [
+                                                            ["Ene", 240],
+                                                            ["Feb", 240],
+                                                            ["Mar", 290],
+                                                            ["Abr", 540],
+                                                            ["May", 480],
+                                                            ["Jun", 220],
+                                                            ["Jul", 170],
+                                                            ["Aug", 190]
+                                                        ],
+                                                        color: "#2baab1"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+
+                                                <!-- Flot: Sales Porto Wordpress -->
+                                                <div class="chart chart-sm" data-sales-rel="Porto Wordpress" id="flotDashSales3" class="chart-hidden"></div>
+                                                <script>
+                                                    var flotDashSales3Data = [{
+                                                        data: [
+                                                            ["Jan", 840],
+                                                            ["Feb", 740],
+                                                            ["Mar", 690],
+                                                            ["Apr", 940],
+                                                            ["May", 1180],
+                                                            ["Jun", 820],
+                                                            ["Jul", 570],
+                                                            ["Aug", 780]
+                                                        ],
+                                                        color: "#734ba9"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 text-center">
+                                        <h2 class="card-title mt-3">Cumplimiento</h2>
+                                        <div class="liquid-meter-wrapper liquid-meter-sm mt-3">
+                                            <div class="liquid-meter">
+                                                <meter min="0" max="100" value="35" id="meterSales"></meter>
+                                            </div>
+                                            <div class="liquid-meter-selector mt-4 pt-1" id="meterSalesSel">
+                                                <a href="#" data-val="75" class="active">Meta mensual</a>
+                                                <a href="#" data-val="48">Meta Anual</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row mb-3">
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-primary">
+                                                    <i class="fas fa-life-ring"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Soporte de quejas</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">1281</strong>
+                                                        <span class="text-primary">(14 no leidas)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(Ver mas)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-secondary">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-secondary">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Beneficios totales</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">$ 14,890.30</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(ver detalle)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-tertiary mb-3">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-tertiary">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Total de ordenes</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">38</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(declaración)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-quaternary">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-quaternary">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Visitantes de hoy</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">3765</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(reporte)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <section class="card">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Procesos con mas reclamos</h2>
+                                <p class="card-subtitle">En esta parte se podra ver el proceso con mas reclamos del mes</p>
+                            </header>
+                            <div class="card-body">
+
+                                <!-- Flot: Basic -->
+                                <div class="chart chart-md" id="flotDashBasic"></div>
+                                <script>
+                                    var flotDashBasicData = [{
+                                        data: [
+                                            [0, 170],
+                                            [1, 169],
+                                            [2, 173],
+                                            [3, 188],
+                                            [4, 147],
+                                            [5, 113],
+                                            [6, 128],
+                                            [7, 169],
+                                            [8, 173],
+                                            [9, 128],
+                                            [10, 128]
+                                        ],
+                                        label: "Reclamaciones",
+                                        color: "#0088cc"
+                                    }, {
+                                        data: [
+                                            [0, 115],
+                                            [1, 124],
+                                            [2, 114],
+                                            [3, 121],
+                                            [4, 115],
+                                            [5, 83],
+                                            [6, 102],
+                                            [7, 148],
+                                            [8, 147],
+                                            [9, 103],
+                                            [10, 113]
+                                        ],
+                                        label: "Evaluacion Medica",
+                                        color: "#2baab1"
+                                    }, {
+                                        data: [
+                                            [0, 70],
+                                            [1, 69],
+                                            [2, 73],
+                                            [3, 88],
+                                            [4, 47],
+                                            [5, 13],
+                                            [6, 28],
+                                            [7, 69],
+                                            [8, 73],
+                                            [9, 28],
+                                            [10, 28]
+                                        ],
+                                        label: "Expedicion",
+                                        color: "#734ba9"
+                                    }];
+
+                                    // See: js/examples/examples.dashboard.js for more settings.
+                                </script>
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <section class="card">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+                                <h2 class="card-title">Uso de la linea de atención</h2>
+                                <p class="card-subtitle">Aca se podra visualizar el estado de uso de la linea de atencion</p>
+                            </header>
+                            <div class="card-body">
+
+                                <!-- Flot: Curves -->
+                                <div class="chart chart-md" id="flotDashRealTime"></div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row pt-4 mt-1">
+                    <div class="col-xl-6">
+                        <section class="card card-transparent mb-3">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Estadisticas Globales</h2>
+                            </header>
+                            <div class="card-body">
+                                <div id="vectorMapWorld" style="height: 350px; width: 100%;"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- <div class="col-xl-6">
+                        <section class="card">
+                            <header class="card-header card-header-transparent">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Projects Stats</h2>
+                            </header>
+                            <div class="card-body">
+                                <table class="table table-responsive-md table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Project</th>
+                                            <th>Status</th>
+                                            <th>Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Porto - Responsive HTML5 Template</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                        100%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Porto - Responsive Drupal 7 Theme</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                        100%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Tucson - Responsive HTML5 Template</td>
+                                            <td><span class="badge badge-warning">Warning</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Tucson - Responsive Business WordPress Theme</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                        90%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Porto - Responsive Admin HTML5 Template</td>
+                                            <td><span class="badge badge-warning">Warning</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                                                        45%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Porto - Responsive HTML5 Template</td>
+                                            <td><span class="badge badge-danger">Danger</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                        40%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Porto - Responsive Drupal 7 Theme</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                                        95%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div> -->
+                </div>
+                <!-- end: page -->
+            </section>
+        </div>
+
+        <aside id="sidebar-right" class="sidebar-right">
+            <div class="nano">
+                <div class="nano-content">
+                    <a href="#" class="mobile-close d-md-none">
+							Collapse <i class="fas fa-chevron-right"></i>
+						</a>
+
+                    <div class="sidebar-right-wrapper">
+
+                        <div class="sidebar-widget widget-calendar">
+                            <h6>Upcoming Tasks</h6>
+                            <div data-plugin-datepicker data-plugin-skin="dark"></div>
+
+                            <ul>
+                                <li>
+                                    <time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+                                    <span>Company Meeting</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget widget-friends">
+                            <h6>Friends</h6>
+                            <ul>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="img/Foto_perfil.jpeg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-online">
+                                    <figure class="profile-picture">
+                                        <img src="img/Foto_perfil.jpeg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="img/Foto_perfil.jpeg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                                <li class="status-offline">
+                                    <figure class="profile-picture">
+                                        <img src="img/Foto_perfil.jpeg" alt="Joseph Doe" class="rounded-circle">
+                                    </figure>
+                                    <div class="profile-info">
+                                        <span class="name">Joseph Doe Junior</span>
+                                        <span class="title">Hey, how are you?</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- Vendor -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="vendor/popper/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="vendor/common/common.js"></script>
+    <script src="vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+    <!-- Specific Page Vendor -->
+    <script src="vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="vendor/jqueryui-touch-punch/jquery.ui.touch-punch.js"></script>
+    <script src="vendor/jquery-appear/jquery.appear.js"></script>
+    <script src="vendor/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+    <script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.js"></script>
+    <script src="vendor/flot/jquery.flot.js"></script>
+    <script src="vendor/flot.tooltip/jquery.flot.tooltip.js"></script>
+    <script src="vendor/flot/jquery.flot.pie.js"></script>
+    <script src="vendor/flot/jquery.flot.categories.js"></script>
+    <script src="vendor/flot/jquery.flot.resize.js"></script>
+    <script src="vendor/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="vendor/raphael/raphael.js"></script>
+    <script src="vendor/morris/morris.js"></script>
+    <script src="vendor/gauge/gauge.js"></script>
+    <script src="vendor/snap.svg/snap.svg.js"></script>
+    <script src="vendor/liquid-meter/liquid.meter.js"></script>
+    <!-- <script src="vendor/jqvmap/jquery.vmap.js"></script>
+    <script src="vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
+    <script src="vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script> -->
+    <script src="vendor/jqvmap/jquery.vmap.js"></script>
+    <script src="vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
+    <script src="vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="js/custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="js/theme.init.js"></script>
+
+    <!-- Examples -->
+    <script src="js/examples/examples.dashboard.js"></script>
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
+
+</body>
+
+</html>

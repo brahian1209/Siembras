@@ -1,0 +1,29 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "estadisticasVereda",
+        "kind": 5,
+        "importPath": "Siembras",
+        "description": "Siembras",
+        "peekOfCode": "estadisticasVereda = datoVereda.describe()\nestadisticasVeredaMedias = estadisticasVereda.loc[[\"mean\"]]\nestadisticasMediaArboles=(estadisticasVeredaMedias[\"Arboles\"]).to_frame() #-----> Imprimir esta\narchivoHTML=estadisticasMediaArboles.to_html()\narchivoTEXTO=open(\"Estadisticas_Bello.html\",\"w\", encoding=\"UTF-8\")\narchivoTEXTO.write(archivoHTML)\narchivoTEXTO.close()\n#filtro 7 Los datos de las veredas Rio Arriba y la Salazar de Belmira\ndatosVeredas=tablaMunicipios [(tablaMunicipios ['Ciudad'] == 'Caramanta')]\narchivoHTML=datosVeredas.to_html()",
+        "detail": "Siembras",
+        "documentation": {}
+    },
+    {
+        "label": "estadisticasVeredaMedias",
+        "kind": 5,
+        "importPath": "Siembras",
+        "description": "Siembras",
+        "peekOfCode": "estadisticasVeredaMedias = estadisticasVereda.loc[[\"mean\"]]\nestadisticasMediaArboles=(estadisticasVeredaMedias[\"Arboles\"]).to_frame() #-----> Imprimir esta\narchivoHTML=estadisticasMediaArboles.to_html()\narchivoTEXTO=open(\"Estadisticas_Bello.html\",\"w\", encoding=\"UTF-8\")\narchivoTEXTO.write(archivoHTML)\narchivoTEXTO.close()\n#filtro 7 Los datos de las veredas Rio Arriba y la Salazar de Belmira\ndatosVeredas=tablaMunicipios [(tablaMunicipios ['Ciudad'] == 'Caramanta')]\narchivoHTML=datosVeredas.to_html()\narchivoTEXTO=open(\"tabla_caramanta.html\",\"w\", encoding=\"UTF-8\")",
+        "detail": "Siembras",
+        "documentation": {}
+    }
+]

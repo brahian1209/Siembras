@@ -81,11 +81,11 @@
                 <div id="userbox" class="userbox">
                     <a href="#" data-toggle="dropdown">
                         <figure class="profile-picture">
-                            <img src="img/Foto_perfil.jpeg" alt="Cris Rodriguez" class="rounded-circle" data-lock-picture="img/!logged-user.jpg" />
+                            <img src="img/Foto_perfil.jpeg" alt="brahian rojas" class="rounded-circle" data-lock-picture="img/!logged-user.jpg" />
                         </figure>
-                        <div class="profile-info" data-lock-name="brahia rojas" data-lock-email="cristinagonzalez@sura.com.co">
-                            <span class="name">Cristina Gonzales Rodriguez</span>
-                            <span class="role">Administradora</span>
+                        <div class="profile-info" data-lock-name="brahia rojas" data-lock-email="barojas@sura.comm.co">
+                            <span class="name">Brahian Andrey Rojas</span>
+                            <span class="role">administrador</span>
                         </div>
 
                         <i class="fa custom-caret"></i>
@@ -111,32 +111,32 @@
         </header>
         <!-- end: header -->
 
-        <div class=" inner-wrapper">
+        <div class="inner-wrapper">
             <!-- start: sidebar -->
             <aside id="sidebar-left" class="sidebar-left">
 
                 <div class="sidebar-header">
-                    <div class="Estilo-sura sidebar-title">
+                    <div class="sidebar-title">
                         Corantioquia
                     </div>
-                    <div class="Estilo-sura sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                    <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
                         <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
                     </div>
                 </div>
 
-                <div class=" Estilo-sura nano">
-                    <div class="Estilo-sura nano-content">
-                        <nav id="menu" class="Estilo-sura nav-main" role="navigation">
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
 
-                            <ul class="Estilo-sura nav nav-main">
+                            <ul class="nav nav-main">
                                 <!-- <li>
                                     <a class="nav-link" href="layouts-default.html">
                                         <i class="fas fa-home" aria-hidden="true"></i>
                                         <span>Dashboard</span>
                                     </a>
                                 </li> -->
-                                <li class="Estilo-sura nav-parent nav-expanded nav-active">
-                                    <a class="Estilo-sura1 nav-link" href="#">
+                                <li class="nav-parent nav-expanded nav-active">
+                                    <a class="nav-link" href="#">
                                         <i class="fas fa-columns" aria-hidden="true"></i>
                                         <span>Informate</span>
                                     </a>
@@ -179,7 +179,7 @@
 				                                        </a>
                                                 </li>
                                                 <li>
-                                                    <a class="nav-link" href="Datos_Medellin.html">
+                                                    <a class="nav-link" href="#">
                                                         Datos de Medellin
 				                                        </a>
                                                 </li>
@@ -275,16 +275,31 @@
                     </div>
                 </header>
 
-                <section class="fondo">
+                <!-- start: page -->
 
-                </section>
-                
+                <div class="col-12 col-md-13">
+                    <!-- se pegaron los ul que se encontraron de la pagina de bostrar con el titulo JavaScript behavior https://getbootstrap.com/docs/5.1/components/navs-tabs/#javascript-behavior -->                        
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Datos veredas Rio Arriba y la Salazar de Belmira</button>
+                    </li>
+                </ul>
+                  <!-- Aca se pega el resto del codigo que lo que va hacer estener el contenido de cada una de las selecciones de arriba -->
+                  <div class="tab-content " id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <!-- aca se inserta la tabla que se creo con python -->
+                      <iframe src="./tabla_veredas.html" frameborder="0" class="w-100 mt-5" height="400"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><iframe src="./datosanalistas2.html" frameborder="0" class="w-100 mt-5" height="400"></iframe></div>
+            </div>
+
+                <!-- end: page -->
             </section>
         </div>
 
         <aside id="sidebar-right" class="sidebar-right">
             <div class="nano">
-                <div class="Estilo-sura nano-content">
+                <div class="nano-content">
                     <a href="#" class="mobile-close d-md-none">
 							Collapse <i class="fas fa-chevron-right"></i>
 						</a>
